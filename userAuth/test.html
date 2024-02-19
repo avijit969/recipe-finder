@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carriage Return Example</title>
+</head>
+<body>
+
+<script>
+    var textWithCarriageReturns = "Marination:\r\n\r\nIn a large bowl, mix the mutton with yogurt, ginger-garlic paste, turmeric powder, red chili powder, coriander powder, cumin powder, and salt.\r\nAllow it to marinate for at least 1-2 hours, or overnight in the refrigerator for better flavor.\r\nCooking:\r\n\r\nHeat oil in a large, heavy-bottomed pot over medium heat.\r\nAdd chopped onions and sauté until golden brown.\r\nAdd the chopped tomatoes and cook until they become soft and the oil starts to separate from the masala.\r\nAdding Spices:\r\n\r\nAdd garam masala and green chilies. Sauté for a couple of minutes.\r\nAdd the marinated mutton and cook on high heat until the mutton pieces are well-sealed and browned.\r\nSimmering:\r\n\r\nReduce the heat to low. Cover the pot and let it simmer until the mutton is almost tender, stirring occasionally.\r\nIf the mixture becomes too dry, you can add a little water.\r\nFinal Cooking:\r\n\r\nOnce the mutton is almost tender, uncover the pot and cook on medium heat until the gravy thickens.\r\nAdjust salt and spice levels according to your taste.\r\nGarnish and Serve:\r\n\r\nGarnish with fresh coriander leaves.\r\nServe the mutton curry hot with rice, naan, or roti.\r\nFeel free to customize the recipe based on your preferences. Enjoy your mutton curry!";
+    var htmlFormattedText = textWithCarriageReturns.replace(/\r/g, '<br>');
+    
+    document.write('<p>' + htmlFormattedText + '</p>');
+</script>
+
+</body>
+</html>

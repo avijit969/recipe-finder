@@ -1,0 +1,166 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(58, 58, 80, 0.936);
+}
+
+header {
+    width: 100%;
+    height: 85px;
+    background-color: rgb(203 0 0 / 62%); /* Adjust the alpha value (0.0 to 1.0) for transparency */
+  color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+form {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+  }
+  
+  input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    width: 100%;
+  }
+  
+  input[type="search"]::placeholder {
+    color: #bbb;
+  }
+  
+  button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+  }
+  
+  button[type="submit"]:hover {
+    opacity: 1;
+  }
+  
+  button[type="submit"]:focus,
+  input[type="search"]:focus {
+    box-shadow: 0 0 3px 0 #1183d6;
+    border-color: #1183d6;
+    outline: none;
+  }
+
+.logo img {
+    height: 120px;
+    width: 120px;
+}
+
+.manubar {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a span {
+    align-items: center;
+    columns: black;
+}
+
+.nav-bar ul li a:hover {
+    color: black;
+    background-color: aliceblue;
+}
+
+.nav-bar ul li a.active {
+    color: black;
+    background-color: aliceblue;
+}
+
+@media only screen and (max-width:900px) {
+    .manubar {
+        display: block;
+        cursor: pointer;
+        margin-right: 15px;
+    }
+
+    .nav-bar.active {
+        height: 400px;
+    }
+   
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+         background-color: rgb(203 0 0 / 62%);
+        width: 100vw;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    #form {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        top: 300px;
+        left: 0;
+        right: 0;
+        margin-left: 5%;
+    }
+
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+
+    }
+}
